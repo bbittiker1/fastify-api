@@ -1,0 +1,14 @@
+curl -X POST \
+  http://localhost:3010/api/cars \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: ae3c72b4-3e56-489b-afb8-2a71a3ab8904' \
+  -d '{
+	"title": "Rogue",
+	"brand": "Nissan",
+	"price": "30k",
+	"age": 1,
+	"services": {
+		"nissan-sunnvale": "2018/12/02"
+	}
+}'
