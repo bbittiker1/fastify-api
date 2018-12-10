@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "35ccc3f5-ce34-46d5-b053-582a67c14c3d",
+		"name": "fast-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3010/api/cars",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Rogue\",\n\t\"brand\": \"Nissan\",\n\t\"price\": \"30k\",\n\t\"age\": 1,\n\t\"services\": {\n\t\t\"nissan-sunnvale\": \"2018/12/02\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "localhost:3010/api/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-car",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Rogue\",\n\t\"brand\": \"Nissan\",\n\t\"price\": \"30k\",\n\t\"age\": 1,\n\t\"services\": {\n\t\t\"nissan-sunnvale\": \"2018/12/02\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "localhost:3010/api/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3010/api/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-cars-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3010/api/cars/5c09ced5acbbef207113a159",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"cars",
+						"5c09ced5acbbef207113a159"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-car",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"brand\": \"Nissan\",\n    \"price\": \"35k\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3010/api/cars/5c09ced5acbbef207113a159",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"cars",
+						"5c09ced5acbbef207113a159"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-car Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3010/api/cars/5c09ced5acbbef207113a159",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"cars",
+						"5c09ced5acbbef207113a159"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
