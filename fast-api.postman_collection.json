@@ -6,9 +6,9 @@
 	},
 	"item": [
 		{
-			"name": "localhost:3010/api/cars",
+			"name": "get-swagger-documentation",
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -20,14 +20,14 @@
 					"raw": "{\n\t\"title\": \"Rogue\",\n\t\"brand\": \"Nissan\",\n\t\"price\": \"30k\",\n\t\"age\": 1,\n\t\"services\": {\n\t\t\"nissan-sunnvale\": \"2018/12/02\"\n\t}\n}"
 				},
 				"url": {
-					"raw": "localhost:3010/api/cars",
+					"raw": "localhost:3010/documentation/index.html",
 					"host": [
 						"localhost"
 					],
 					"port": "3010",
 					"path": [
-						"api",
-						"cars"
+						"documentation",
+						"index.html"
 					]
 				}
 			},
