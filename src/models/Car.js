@@ -1,5 +1,5 @@
 // External Dependancies
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const carSchema = new mongoose.Schema({
   title: String,
@@ -10,6 +10,6 @@ const carSchema = new mongoose.Schema({
     type: Map,
     of: String
   }
-})
+});
 
-module.exports = mongoose.model('Car', carSchema)
+module.exports = mongoose.model('Car', carSchema);
