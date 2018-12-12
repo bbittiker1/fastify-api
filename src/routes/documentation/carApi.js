@@ -27,4 +27,4 @@ exports.addCarSchema = {
       }
     }
   }
-}
+};
