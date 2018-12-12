@@ -34,6 +34,18 @@ fastify.get('/', async (request, reply) => {
   return { hello: 'world' };
 });
 
+// Add CORS
+fastify.addHook(
+    'preHandler',
+    (req, reply, next) => {
+        reply.header('Access-Control-Allow-Credentials', "true");
+
+        // This can be locked down to domain/origin
+        reply.header('Access-Control-Allow-Origin', "*");
+        next();
+    }
+);
+
 // Run the server!
 const start = async () => {
   try {
