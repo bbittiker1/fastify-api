@@ -3,5 +3,6 @@
 
 1. npm install
 2. npm start
-3. http://localhost:3010/api/cars
+3. http://localhost:3000/api/cars
+4. http://localhost:3000/documentation # swagger
 
