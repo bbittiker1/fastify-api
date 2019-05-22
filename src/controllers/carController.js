@@ -39,7 +39,7 @@ exports.updateCar = async (req, reply) => {
     const id = req.params.id;
     const car = req.body;
     const { ...updateData } = car;
-    return await Car.findByIdAndUpdate(id, updateData, { new: true });;
+    return await Car.findByIdAndUpdate(id, updateData, { new: true });
   } catch (err) {
     throw boom.boomify(err)
   }
@@ -49,8 +49,8 @@ exports.updateCar = async (req, reply) => {
 exports.deleteCar = async (req, reply) => {
   try {
     const id = req.params.id;
-    return  await Car.findByIdAndRemove(id);;
+    return  await Car.findByIdAndRemove(id);
   } catch (err) {
     throw boom.boomify(err)
   }
-}
+};

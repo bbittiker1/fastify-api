@@ -1,3 +1,6 @@
+'use strict';
+
+/* jshint node: true */
 
 // Require external modules
 const mongoose = require('mongoose');
@@ -8,7 +11,7 @@ const routes = require('./src/routes');
 const swagger = require('./src/config/swagger');
 
 
-const myport = 3000;
+const myport = 3001;
 
 swagger.options.swagger.host = `localhost:${myport}`;
 

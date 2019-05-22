@@ -1,3 +1,8 @@
+'use strict';
+
+/* jshint node: true */
+
+
 // Import our Controllers
 const carController = require('../controllers/carController');
 
